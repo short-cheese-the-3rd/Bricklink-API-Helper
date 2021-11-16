@@ -56,8 +56,11 @@ Returns your BricklinkApi instance to enable chaining.
 __Parameters__
 
 * *$httpMethod*: Use the common REST methods. i.e. - GET, POST, PUT, DELETE
-* *$apiPath*: The relative path of the api. Should include a leading `/`.
-* *$params*: A string with name value pairs. i.e. - `box=true&instructions=true`
+* *$apiPath*: The relative path of the api. Should include a leading `/`. i.e. - `/items/part/{$part_number}/price`
+* *$params*: An array with name value pairs. i.e. - `[
+			'currency_code' => "AUD",
+			'new_or_used' => "N"
+		]`
 
 ### Execute request
 
